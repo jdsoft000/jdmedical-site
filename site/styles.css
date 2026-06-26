@@ -270,10 +270,9 @@ nav.nav a:hover {
   display: block;
   position: relative;
   z-index: 2;
-  background-color: #ffffff;
-  border-radius: var(--radius-md);
-  padding: 1.5rem;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(0,0,0,0.05);
+  /* 흰색 배경을 없애고 다크 테마에 어울리게 블렌드 및 그림자 처리 */
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.8)) brightness(0.9) contrast(1.1);
 }
 
 .product-canvas .pedestal {
