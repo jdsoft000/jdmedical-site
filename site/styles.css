@@ -1,0 +1,405 @@
+/* JD Medical — premium framing around product photos (machine unchanged in source image) */
+:root {
+  --bg-deep: #0b0f14;
+  --bg-mid: #121a24;
+  --surface: rgba(255, 255, 255, 0.045);
+  --surface-2: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.12);
+  --text: #e8eef6;
+  --muted: #94a3b8;
+  --accent: #5eead4;
+  --accent-dim: rgba(94, 234, 212, 0.35);
+  --gold: #c8a96a;
+  --radius-lg: 28px;
+  --radius-md: 16px;
+  --font-sans: "Pretendard Variable", Pretendard, "Noto Sans KR", system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--text);
+  background: var(--bg-deep);
+  line-height: 1.65;
+  font-size: 1.05rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.skip {
+  position: absolute;
+  left: -9999px;
+}
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 999;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #000;
+}
+
+/* --- layout --- */
+.page-bg {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(94, 234, 212, 0.12), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 50%, rgba(200, 169, 106, 0.06), transparent),
+    radial-gradient(ellipse 50% 50% at 0% 80%, rgba(59, 130, 246, 0.08), transparent),
+    linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-mid) 45%, var(--bg-deep) 100%);
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+header.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.brand-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, var(--surface-2), transparent);
+  border: 1px solid var(--border);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+
+.brand-text strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.brand-text span {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+nav.nav a {
+  color: var(--muted);
+  margin-left: 1.25rem;
+  font-size: 0.9rem;
+}
+nav.nav a:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* --- hero --- */
+.hero {
+  padding: 3.5rem 0 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.hero .en {
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.hero-lead {
+  max-width: 36rem;
+  margin: 0 auto 2rem;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* --- product showcase (premium frame; machine = your image as-is) --- */
+.showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 2rem 0 3.5rem;
+}
+
+@media (min-width: 860px) {
+  .showcase-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.product-stage {
+  position: relative;
+  border-radius: var(--radius-lg);
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(94, 234, 212, 0.25) 40%,
+    rgba(200, 169, 106, 0.15) 100%
+  );
+  overflow: hidden;
+}
+
+.product-stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, var(--border), transparent 40%, transparent 60%, var(--border));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.product-inner {
+  position: relative;
+  border-radius: calc(var(--radius-lg) - 1px);
+  background:
+    radial-gradient(ellipse 120% 80% at 50% 100%, rgba(94, 234, 212, 0.08), transparent 55%),
+    radial-gradient(ellipse 80% 60% at 20% 20%, rgba(200, 169, 106, 0.06), transparent 50%),
+    linear-gradient(165deg, #141c28 0%, #0d1219 100%);
+  padding: 2rem 1.5rem 1.75rem;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* soft ambient blobs behind machine */
+.product-inner::after {
+  content: "";
+  position: absolute;
+  inset: 12% 8% auto;
+  height: 45%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(94, 234, 212, 0.12) 0%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.product-label {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.product-label h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.product-label .tag {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  border: 1px solid rgba(200, 169, 106, 0.35);
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.product-canvas {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 0.5rem 0 1rem;
+}
+
+/* pedestal + vignette: machine PNG/JPG sits on top unchanged */
+.product-canvas figure {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+}
+
+.product-canvas img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.55));
+}
+
+.product-canvas .pedestal {
+  position: absolute;
+  left: 50%;
+  bottom: -4%;
+  transform: translateX(-50%);
+  width: 78%;
+  height: 18%;
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.14) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 1;
+  filter: blur(8px);
+}
+
+.product-canvas .rim {
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  transform: translateX(-50%);
+  width: 72%;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, var(--accent-dim), var(--gold), var(--accent-dim), transparent);
+  opacity: 0.85;
+  z-index: 3;
+}
+
+.caption {
+  position: relative;
+  z-index: 2;
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* --- sections --- */
+section.block {
+  margin: 3rem 0;
+}
+
+section.block h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+  letter-spacing: -0.02em;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+}
+
+.card p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+}
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+ul.clean {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+ul.clean li {
+  margin-bottom: 0.5rem;
+}
+
+.meta-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+@media (min-width: 640px) {
+  .meta-grid {
+    grid-template-columns: 140px 1fr;
+  }
+}
+.meta-grid dt {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.meta-grid dd {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.partner-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: linear-gradient(90deg, rgba(94, 234, 212, 0.06), rgba(200, 169, 106, 0.05));
+}
+
+.partner-banner a.btn {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.88rem;
+}
+.partner-banner a.btn:hover {
+  background: rgba(94, 234, 212, 0.12);
+  border-color: var(--accent-dim);
+  text-decoration: none;
+}
+
+footer.site-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer.site-footer nav a {
+  color: var(--muted);
+  margin-right: 1rem;
+}
