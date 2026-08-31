@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://jdmedical.co.kr/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://jdmedical.co.kr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://jdmedical.co.kr/en/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jdmedical.co.kr/cn/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jdmedical.co.kr/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/about</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://jdmedical.co.kr/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://jdmedical.co.kr/en/about" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jdmedical.co.kr/cn/about" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/business</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://jdmedical.co.kr/business" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://jdmedical.co.kr/en/business" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jdmedical.co.kr/cn/business" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/products</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://jdmedical.co.kr/products" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://jdmedical.co.kr/en/products" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jdmedical.co.kr/cn/products" />
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/partner</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://jdmedical.co.kr/partner" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://jdmedical.co.kr/en/partner" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jdmedical.co.kr/cn/partner" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/contact</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://jdmedical.co.kr/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://jdmedical.co.kr/en/contact" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jdmedical.co.kr/cn/contact" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://jdmedical.co.kr/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://jdmedical.co.kr/en/privacy" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jdmedical.co.kr/cn/privacy" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://jdmedical.co.kr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://jdmedical.co.kr/en/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jdmedical.co.kr/cn/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jdmedical.co.kr/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/en/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/en/business</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/en/products</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/en/partner</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/en/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/en/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/cn/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://jdmedical.co.kr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://jdmedical.co.kr/en/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://jdmedical.co.kr/cn/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jdmedical.co.kr/" />
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/cn/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/cn/business</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/cn/products</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/cn/partner</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/cn/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jdmedical.co.kr/cn/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

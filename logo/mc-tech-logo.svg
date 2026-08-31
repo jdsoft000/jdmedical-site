@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" role="img" aria-label="???? MC TECH">
+  <!-- Wordmark: ? + (?? / MC TECH) + ?  � ?? width matches MC TECH -->
+  <g fill="#111111">
+    <text x="36" y="175" font-family="'Black Han Sans', 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="118" font-weight="700">?</text>
+    <text x="145" y="130" font-family="'Black Han Sans', 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="72" font-weight="700" text-anchor="middle">??</text>
+    <text x="145" y="188" font-family="'Montserrat', 'Noto Sans KR', Arial, sans-serif" font-size="28" font-weight="600" letter-spacing="3" text-anchor="middle">MC TECH</text>
+    <text x="220" y="175" font-family="'Black Han Sans', 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="118" font-weight="700">?</text>
+  </g>
+  <!-- Soft boomerang symbol -->
+  <g transform="translate(560 150)" fill="none" stroke-width="36" stroke-linecap="round" stroke-linejoin="round" opacity="0.72">
+    <path stroke="#FFD432" d="M -12 -88 L -12 -24 Q -12 -2 -30 -2 L -88 -2"/>
+    <path stroke="#4AA8FF" d="M 12 -88 L 12 -24 Q 12 -2 30 -2 L 88 -2"/>
+    <path stroke="#4AA8FF" d="M -12 88 L -12 24 Q -12 2 -30 2 L -88 2"/>
+    <path stroke="#FFD432" d="M 12 88 L 12 24 Q 12 2 30 2 L 88 2"/>
+  </g>
+</svg>

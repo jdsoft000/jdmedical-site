@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" role="img" aria-label="???? MC TECH">
+  <g fill="#FFFFFF">
+    <text x="40" y="155" font-family="'Black Han Sans', 'Noto Sans KR', 'Malgun Gothic', sans-serif" font-size="118" font-weight="700" letter-spacing="-2">????</text>
+    <text x="178" y="230" font-family="'Montserrat', 'Noto Sans KR', Arial, sans-serif" font-size="42" font-weight="600" letter-spacing="6">MC TECH</text>
+  </g>
+  <g transform="translate(700 170)" fill="none" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" opacity="0.78">
+    <path stroke="#FFD432" d="M -12 -96 L -12 -28 Q -12 -4 -34 -4 L -96 -4"/>
+    <path stroke="#4AA8FF" d="M 12 -96 L 12 -28 Q 12 -4 34 -4 L 96 -4"/>
+    <path stroke="#4AA8FF" d="M -12 96 L -12 28 Q -12 4 -34 4 L -96 4"/>
+    <path stroke="#FFD432" d="M 12 96 L 12 28 Q 12 4 34 4 L 96 4"/>
+  </g>
+</svg>

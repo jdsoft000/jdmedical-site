@@ -1,0 +1,29 @@
+{
+  "name": "jd_medical",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdsoft000/jdmedical-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jdsoft000/jdmedical-site/issues"
+  },
+  "homepage": "https://github.com/jdsoft000/jdmedical-site#readme",
+  "dependencies": {
+    "canvas": "^3.2.3",
+    "pdf-to-img": "^6.3.0",
+    "pdfjs-dist": "^4.10.38"
+  },
+  "allowScripts": {
+    "canvas@3.2.3": true
+  }
+}

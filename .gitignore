@@ -1,0 +1,23 @@
+﻿# Dependencies / local
+node_modules/
+package-lock.json
+.wrangler/
+__pycache__/
+.cursor/
+*.pyc
+
+# Nested / duplicate checkout
+jdmedical-site/
+
+# Scratch & personal dumps
+tools/scratch/
+KakaoTalk_*.jpg
+Generated_image.png
+temp_logo.svg
+temp_text.txt
+extracted_paths.txt
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
