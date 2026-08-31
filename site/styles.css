@@ -340,6 +340,32 @@ nav.nav a[aria-current="page"] {
   max-width: 520px;
 }
 
+.product-copy {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+}
+
+.product-copy h3 {
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.product-copy-label {
+  margin: 0 0 0.65rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.product-copy .clean {
+  margin: 0;
+}
+
 .section-lead {
   margin: -0.25rem 0 1.25rem;
   color: var(--muted);
