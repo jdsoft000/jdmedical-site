@@ -58,7 +58,8 @@
               <a href="business">사업</a>
               <a href="products">제품</a>
               <a href="partner">협력</a>
-              <a href="contact" aria-current="page">연락</a>
+            <a href="inquiry">문의</a>
+            <a href="contact" aria-current="page">연락</a>
             </nav>
             <nav class="lang-switch" aria-label="Language">
               <a href="contact" hreflang="ko" lang="ko" aria-current="page">KO</a>
@@ -72,12 +73,11 @@
           <header class="page-head">
             <p class="page-eyebrow">Contact</p>
             <h1>연락처</h1>
-            <p class="section-lead">문의는 이메일로 남겨 주시면 확인 후 회신드립니다.</p>
+            <p class="section-lead">본사 연락처와 오시는 길입니다. 제품·견적 문의는 <a href="inquiry">문의</a> 게시판을 이용해 주세요.</p>
           </header>
 
-          <div class="contact-layout">
-            <div class="card">
-              <dl class="meta-grid">
+          <div class="card contact-single">
+            <dl class="meta-grid">
                 <dt>상호</dt>
                 <dd>주식회사 제이디메디컬 (JDmedical Co., Ltd.)</dd>
                 <dt>사업자등록번호</dt>
@@ -93,40 +93,38 @@
                 <dt>전화</dt>
                 <dd>정비 중 — 이메일로 문의 부탁드립니다.</dd>
               </dl>
-            </div>
-
-            <div class="card">
-              <h2 class="form-title">메일 문의</h2>
-              <form
-                class="contact-form"
-                data-contact-form
-                data-mail-to="jdmedical.co.ltd@gmail.com"
-                data-msg-required="모든 항목을 입력해 주세요."
-                data-msg-from="보낸 사람"
-                data-msg-body="문의 내용"
-                data-msg-open="메일 앱이 열립니다. 전송을 완료해 주세요."
-              >
-                <label>
-                  제목
-                  <input type="text" name="subject" required maxlength="120" placeholder="문의 제목" />
-                </label>
-                <label>
-                  메일주소
-                  <input type="email" name="email" required maxlength="120" placeholder="you@example.com" />
-                </label>
-                <label>
-                  내용
-                  <textarea name="message" required maxlength="4000" placeholder="문의 내용을 적어 주세요."></textarea>
-                </label>
-                <div class="form-actions">
-                  <button class="btn" type="submit">메일 보내기</button>
-                  <p class="form-hint" data-form-status>
-                    전송 시 기본 메일 앱이 열립니다.
-                  </p>
-                </div>
-              </form>
-            </div>
           </div>
+
+          <section class="map-section" aria-labelledby="directions-heading">
+            <h2 id="directions-heading" class="form-title">오시는 길</h2>
+            <p class="map-address">대전광역시 서구 동서대로 1005번길 59-13 (내동)</p>
+            <p class="map-links">
+              <a
+                href="https://map.kakao.com/link/search/대전광역시 서구 동서대로 1005번길 59-13"
+                target="_blank"
+                rel="noopener noreferrer"
+                >카카오맵</a>
+              <a
+                href="https://map.naver.com/v5/search/대전광역시 서구 동서대로 1005번길 59-13"
+                target="_blank"
+                rel="noopener noreferrer"
+                >네이버 지도</a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C+%EC%84%9C%EA%B5%AC+%EB%8F%99%EC%84%9C%EB%8C%80%EB%A1%9C+1005%EB%B2%88%EA%B8%B8+59-13"
+                target="_blank"
+                rel="noopener noreferrer"
+                >구글 지도</a>
+            </p>
+            <div class="map-frame">
+              <iframe
+                title="주식회사 제이디메디컬 본사 위치"
+                src="https://www.google.com/maps?q=%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C+%EC%84%9C%EA%B5%AC+%EB%8F%99%EC%84%9C%EB%8C%80%EB%A1%9C+1005%EB%B2%88%EA%B8%B8+59-13&amp;hl=ko&amp;z=17&amp;output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
         </main>
 
         <footer class="site-footer">
@@ -137,6 +135,5 @@
         </footer>
       </div>
     </div>
-    <script src="contact.js"></script>
   </body>
 </html>

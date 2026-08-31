@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>문의 | 주식회사 제이디메디컬</title>
+    <meta name="description" content="주식회사 제이디메디컬 온라인 문의 게시판." />
+    <link rel="canonical" href="https://jdmedical.co.kr/inquiry" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="JDmedical Co., Ltd." />
+    <meta property="og:title" content="문의 | 주식회사 제이디메디컬" />
+    <meta property="og:description" content="주식회사 제이디메디컬 온라인 문의 게시판." />
+    <meta property="og:url" content="https://jdmedical.co.kr/inquiry" />
+    <meta property="og:image" content="https://jdmedical.co.kr/images/og-cover.jpg" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="문의 | 주식회사 제이디메디컬" />
+    <meta name="twitter:description" content="주식회사 제이디메디컬 온라인 문의 게시판." />
+    <meta name="twitter:image" content="https://jdmedical.co.kr/images/og-cover.jpg" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+    <link rel="icon" href="images/jd-medical-symbol.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">본문으로 건너뛰기</a>
+    <div class="page-bg">
+      <div class="wrap">
+        <header class="site-header">
+          <a class="brand" href="./" aria-label="제이디메디컬 홈">
+            <img class="brand-logo" src="images/jd-medical-symbol.svg" width="48" height="32" alt="" />
+            <div class="brand-text">
+              <strong>제이디메디컬</strong>
+              <span>JDmedical Co., Ltd.</span>
+            </div>
+          </a>
+          <div class="header-tools">
+            <nav class="nav" aria-label="주요 메뉴">
+              <a href="./">홈</a>
+              <a href="about">회사</a>
+              <a href="business">사업</a>
+              <a href="products">제품</a>
+              <a href="partner">협력</a>
+              <a href="inquiry" aria-current="page">문의</a>
+              <a href="contact">연락</a>
+            </nav>
+            <nav class="lang-switch" aria-label="Language">
+              <a href="inquiry" hreflang="ko" lang="ko" aria-current="page">KO</a>
+              <a href="en/inquiry" hreflang="en" lang="en">EN</a>
+              <a href="cn/inquiry" hreflang="zh-CN" lang="zh-CN">CN</a>
+            </nav>
+          </div>
+        </header>
+
+        <main id="main" class="page-main">
+          <header class="page-head">
+            <p class="page-eyebrow">Inquiry</p>
+            <h1>문의</h1>
+            <p class="section-lead">제목, 연락처, 내용을 남겨 주시면 확인 후 연락드립니다. 비밀글은 작성 시 설정한 비밀번호로만 열람할 수 있습니다.</p>
+          </header>
+
+          <div
+            class="inquiry-board"
+            data-inquiry-board
+            data-msg-loading="불러오는 중…"
+            data-msg-empty="등록된 문의가 없습니다."
+            data-msg-submit-ok="문의가 등록되었습니다."
+            data-msg-submit-fail="등록에 실패했습니다. 잠시 후 다시 시도해 주세요."
+            data-msg-required="필수 항목을 입력해 주세요."
+            data-msg-secret-password="비밀글은 비밀번호(4~32자)를 입력해 주세요."
+            data-msg-unlock-fail="비밀번호가 올바르지 않습니다."
+            data-msg-delete-ok="삭제되었습니다."
+            data-msg-delete-fail="삭제에 실패했습니다. 관리자 비밀번호를 확인해 주세요."
+            data-msg-admin-password="관리자 비밀번호"
+            data-msg-secret-badge="비밀"
+            data-msg-locked="비밀글입니다. 비밀번호를 입력해 주세요."
+            data-msg-unlock-btn="내용 보기"
+            data-msg-delete-btn="삭제"
+            data-msg-contact-label="연락처"
+            data-msg-spam-rate="등록이 너무 많습니다. 1시간 후 다시 시도해 주세요."
+            data-msg-spam-timing="잠시 후 다시 시도해 주세요."
+            data-msg-turnstile-fail="보안 확인에 실패했습니다. 새로고침 후 다시 시도해 주세요."
+          >
+            <div class="card inquiry-form-card">
+              <h2 class="form-title">문의 작성</h2>
+              <form class="contact-form" data-inquiry-form>
+                <label class="visually-hidden" aria-hidden="true">
+                  웹사이트
+                  <input type="text" name="website" tabindex="-1" autocomplete="off" />
+                </label>
+                <label class="visually-hidden" aria-hidden="true">
+                  회사
+                  <input type="text" name="company" tabindex="-1" autocomplete="off" />
+                </label>
+                <label>
+                  이름
+                  <input type="text" name="name" required maxlength="40" placeholder="이름" />
+                </label>
+                <label>
+                  제목
+                  <input type="text" name="title" required maxlength="100" placeholder="문의 제목" />
+                </label>
+                <label>
+                  연락처 (전화번호 또는 이메일)
+                  <input type="text" name="contact" required maxlength="80" placeholder="010-0000-0000 또는 email@example.com" />
+                </label>
+                <label>
+                  내용
+                  <textarea name="content" required maxlength="300" placeholder="문의 내용 (300자 이하)"></textarea>
+                </label>
+                <p class="inquiry-counter" data-content-counter>0/300</p>
+                <div class="inquiry-secret-row">
+                  <label>
+                    <input type="checkbox" name="is_secret" value="1" />
+                    비밀글
+                  </label>
+                  <label data-password-wrap hidden>
+                    비밀번호
+                    <input type="password" name="password" minlength="4" maxlength="32" autocomplete="new-password" placeholder="4~32자" />
+                  </label>
+                </div>
+                <div data-turnstile-mount class="turnstile-mount"></div>
+                <div class="form-actions">
+                  <button class="btn" type="submit">등록</button>
+                </div>
+                <p class="inquiry-status" data-inquiry-status></p>
+              </form>
+            </div>
+
+            <section aria-label="문의 목록">
+              <h2 class="form-title">문의 목록</h2>
+              <div class="inquiry-list" data-inquiry-list></div>
+            </section>
+          </div>
+        </main>
+
+        <footer class="site-footer">
+          <span>© 주식회사 제이디메디컬 (JDmedical Co., Ltd.)</span>
+          <nav aria-label="푸터">
+            <a href="privacy">개인정보처리방침</a>
+          </nav>
+        </footer>
+      </div>
+    </div>
+
+    <div class="inquiry-modal" data-inquiry-modal hidden>
+      <div class="card inquiry-modal-card" role="dialog" aria-modal="true" aria-labelledby="inquiry-modal-title">
+        <h2 class="form-title" id="inquiry-modal-title" data-inquiry-modal-title>비밀글</h2>
+        <form data-inquiry-unlock-form>
+          <label>
+            비밀번호
+            <input type="password" name="password" required autocomplete="current-password" />
+          </label>
+          <div class="inquiry-modal-actions">
+            <button class="btn btn-ghost" type="button" data-inquiry-modal-close>취소</button>
+            <button class="btn" type="submit">확인</button>
+          </div>
+          <p class="inquiry-status" data-inquiry-modal-status></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="inquiry.js"></script>
+  </body>
+</html>

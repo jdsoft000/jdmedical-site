@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inquiry | JDmedical Co., Ltd.</title>
+    <meta name="description" content="JDmedical Co., Ltd. online inquiry board." />
+    <link rel="canonical" href="https://jdmedical.co.kr/en/inquiry" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="JDmedical Co., Ltd." />
+    <meta property="og:title" content="Inquiry | JDmedical Co., Ltd." />
+    <meta property="og:description" content="JDmedical Co., Ltd. online inquiry board." />
+    <meta property="og:url" content="https://jdmedical.co.kr/en/inquiry" />
+    <meta property="og:image" content="https://jdmedical.co.kr/images/og-cover.jpg" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="icon" href="../images/jd-medical-symbol.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="page-bg">
+      <div class="wrap">
+        <header class="site-header">
+          <a class="brand" href="./" aria-label="JDmedical home">
+            <img class="brand-logo" src="../images/jd-medical-symbol.svg" width="48" height="32" alt="" />
+            <div class="brand-text"><strong>JDmedical</strong><span>JDmedical Co., Ltd.</span></div>
+          </a>
+          <div class="header-tools">
+            <nav class="nav" aria-label="Main menu">
+              <a href="./">Home</a>
+              <a href="about">About</a>
+              <a href="business">Business</a>
+              <a href="products">Products</a>
+              <a href="partner">Partner</a>
+              <a href="inquiry" aria-current="page">Inquiry</a>
+              <a href="contact">Contact</a>
+            </nav>
+            <nav class="lang-switch" aria-label="Language">
+              <a href="../inquiry" hreflang="ko" lang="ko">KO</a>
+              <a href="inquiry" hreflang="en" lang="en" aria-current="page">EN</a>
+              <a href="../cn/inquiry" hreflang="zh-CN" lang="zh-CN">CN</a>
+            </nav>
+          </div>
+        </header>
+        <main id="main" class="page-main">
+          <header class="page-head">
+            <p class="page-eyebrow">Inquiry</p>
+            <h1>Inquiry</h1>
+            <p class="section-lead">Leave your inquiry and we will contact you after review. Private posts can be opened with the password you set.</p>
+          </header>
+          <div
+            class="inquiry-board"
+            data-inquiry-board
+            data-msg-loading="Loading…"
+            data-msg-empty="No inquiries yet."
+            data-msg-submit-ok="Your inquiry has been posted."
+            data-msg-submit-fail="Failed to post. Please try again."
+            data-msg-required="Please fill in all required fields."
+            data-msg-secret-password="Private posts require a password (4–32 characters)."
+            data-msg-unlock-fail="Incorrect password."
+            data-msg-delete-ok="Deleted."
+            data-msg-delete-fail="Delete failed. Check the admin password."
+            data-msg-admin-password="Admin password"
+            data-msg-secret-badge="Private"
+            data-msg-locked="This is a private post. Enter the password to view."
+            data-msg-unlock-btn="View"
+            data-msg-delete-btn="Delete"
+            data-msg-contact-label="Contact"
+            data-msg-spam-rate="Too many submissions. Please try again in an hour."
+            data-msg-spam-timing="Please wait a moment and try again."
+            data-msg-turnstile-fail="Security check failed. Refresh the page and try again."
+          >
+            <div class="card inquiry-form-card">
+              <h2 class="form-title">New inquiry</h2>
+              <form class="contact-form" data-inquiry-form>
+                <label class="visually-hidden" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+                <label class="visually-hidden" aria-hidden="true">Company<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
+                <label>Name<input type="text" name="name" required maxlength="40" placeholder="Name" /></label>
+                <label>Subject<input type="text" name="title" required maxlength="100" placeholder="Subject" /></label>
+                <label>Contact (phone or email)<input type="text" name="contact" required maxlength="80" placeholder="Phone or email" /></label>
+                <label>Message<textarea name="content" required maxlength="300" placeholder="Up to 300 characters"></textarea></label>
+                <p class="inquiry-counter" data-content-counter>0/300</p>
+                <div class="inquiry-secret-row">
+                  <label><input type="checkbox" name="is_secret" value="1" /> Private post</label>
+                  <label data-password-wrap hidden>Password<input type="password" name="password" minlength="4" maxlength="32" autocomplete="new-password" placeholder="4–32 chars" /></label>
+                </div>
+                <div data-turnstile-mount class="turnstile-mount"></div>
+                <div class="form-actions"><button class="btn" type="submit">Submit</button></div>
+                <p class="inquiry-status" data-inquiry-status></p>
+              </form>
+            </div>
+            <section aria-label="Inquiry list">
+              <h2 class="form-title">Inquiries</h2>
+              <div class="inquiry-list" data-inquiry-list></div>
+            </section>
+          </div>
+        </main>
+        <footer class="site-footer">
+          <span>© JDmedical Co., Ltd.</span>
+          <nav aria-label="Footer"><a href="privacy">Privacy Policy</a></nav>
+        </footer>
+      </div>
+    </div>
+    <div class="inquiry-modal" data-inquiry-modal hidden>
+      <div class="card inquiry-modal-card" role="dialog" aria-modal="true" aria-labelledby="inquiry-modal-title">
+        <h2 class="form-title" id="inquiry-modal-title" data-inquiry-modal-title>Private post</h2>
+        <form data-inquiry-unlock-form>
+          <label>Password<input type="password" name="password" required autocomplete="current-password" /></label>
+          <div class="inquiry-modal-actions">
+            <button class="btn btn-ghost" type="button" data-inquiry-modal-close>Cancel</button>
+            <button class="btn" type="submit">Confirm</button>
+          </div>
+          <p class="inquiry-status" data-inquiry-modal-status></p>
+        </form>
+      </div>
+    </div>
+    <script src="../inquiry.js"></script>
+  </body>
+</html>

@@ -49,6 +49,7 @@
               <a href="business">Business</a>
               <a href="products">Products</a>
               <a href="partner">Partner</a>
+              <a href="inquiry">Inquiry</a>
               <a href="contact" aria-current="page">Contact</a>
             </nav>
             <nav class="lang-switch" aria-label="Language">
@@ -62,11 +63,10 @@
           <header class="page-head">
             <p class="page-eyebrow">Contact</p>
             <h1>Contact</h1>
-            <p class="section-lead">Please leave an email inquiry and we will reply after review.</p>
+            <p class="section-lead">HQ contact details and directions. For product or quote inquiries, please use the <a href="inquiry">Inquiry</a> board.</p>
           </header>
-          <div class="contact-layout">
-            <div class="card">
-              <dl class="meta-grid">
+          <div class="card contact-single">
+            <dl class="meta-grid">
                 <dt>Company</dt><dd>JDmedical Co., Ltd.</dd>
                 <dt>Business Reg. No.</dt><dd>264-87-03918</dd>
                 <dt>CEO</dt><dd>Min Jeong-dae</dd>
@@ -75,20 +75,38 @@
                 <dt>Email</dt><dd><a href="mailto:jdmedical.co.ltd@gmail.com">jdmedical.co.ltd@gmail.com</a></dd>
                 <dt>Phone</dt><dd>Temporarily unavailable — please inquire by email.</dd>
               </dl>
-            </div>
-            <div class="card">
-              <h2 class="form-title">Email inquiry</h2>
-              <form class="contact-form" data-contact-form data-mail-to="jdmedical.co.ltd@gmail.com" data-msg-required="Please fill in all fields." data-msg-from="From" data-msg-body="Message" data-msg-open="Your mail app will open. Please complete sending.">
-                <label>Subject<input type="text" name="subject" required maxlength="120" placeholder="Subject" /></label>
-                <label>Email<input type="email" name="email" required maxlength="120" placeholder="you@example.com" /></label>
-                <label>Message<textarea name="message" required maxlength="4000" placeholder="Write your inquiry."></textarea></label>
-                <div class="form-actions">
-                  <button class="btn" type="submit">Send email</button>
-                  <p class="form-hint" data-form-status>Your default mail app will open.</p>
-                </div>
-              </form>
-            </div>
           </div>
+
+          <section class="map-section" aria-labelledby="directions-heading">
+            <h2 id="directions-heading" class="form-title">Directions</h2>
+            <p class="map-address">59-13, Dongseodae-ro 1005beon-gil, Seo-gu, Daejeon, Korea (Naedong)</p>
+            <p class="map-links">
+              <a
+                href="https://map.kakao.com/link/search/대전광역시 서구 동서대로 1005번길 59-13"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Kakao Map</a>
+              <a
+                href="https://map.naver.com/v5/search/대전광역시 서구 동서대로 1005번길 59-13"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Naver Map</a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C+%EC%84%9C%EA%B5%AC+%EB%8F%99%EC%84%9C%EB%8C%80%EB%A1%9C+1005%EB%B2%88%EA%B8%B8+59-13"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Google Maps</a>
+            </p>
+            <div class="map-frame">
+              <iframe
+                title="JDmedical Co., Ltd. HQ location"
+                src="https://www.google.com/maps?q=%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C+%EC%84%9C%EA%B5%AC+%EB%8F%99%EC%84%9C%EB%8C%80%EB%A1%9C+1005%EB%B2%88%EA%B8%B8+59-13&amp;hl=en&amp;z=17&amp;output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
         </main>
         <footer class="site-footer">
           <span>© JDmedical Co., Ltd.</span>
@@ -98,6 +116,5 @@
         </footer>
       </div>
     </div>
-    <script src="../contact.js"></script>
   </body>
 </html>

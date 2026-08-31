@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>咨询 | 杰迪医疗有限公司</title>
+    <meta name="description" content="杰迪医疗有限公司在线咨询留言板。" />
+    <link rel="canonical" href="https://jdmedical.co.kr/cn/inquiry" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="JDmedical Co., Ltd." />
+    <meta property="og:title" content="咨询 | 杰迪医疗有限公司" />
+    <meta property="og:description" content="杰迪医疗有限公司在线咨询留言板。" />
+    <meta property="og:url" content="https://jdmedical.co.kr/cn/inquiry" />
+    <meta property="og:image" content="https://jdmedical.co.kr/images/og-cover.jpg" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="icon" href="../images/jd-medical-symbol.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">跳到正文</a>
+    <div class="page-bg">
+      <div class="wrap">
+        <header class="site-header">
+          <a class="brand" href="./" aria-label="杰迪医疗首页">
+            <img class="brand-logo" src="../images/jd-medical-symbol.svg" width="48" height="32" alt="" />
+            <div class="brand-text"><strong>杰迪医疗</strong><span>JDmedical Co., Ltd.</span></div>
+          </a>
+          <div class="header-tools">
+            <nav class="nav" aria-label="主导航">
+              <a href="./">首页</a>
+              <a href="about">公司</a>
+              <a href="business">业务</a>
+              <a href="products">产品</a>
+              <a href="partner">合作</a>
+              <a href="inquiry" aria-current="page">咨询</a>
+              <a href="contact">联系</a>
+            </nav>
+            <nav class="lang-switch" aria-label="Language">
+              <a href="../inquiry" hreflang="ko" lang="ko">KO</a>
+              <a href="../en/inquiry" hreflang="en" lang="en">EN</a>
+              <a href="inquiry" hreflang="zh-CN" lang="zh-CN" aria-current="page">CN</a>
+            </nav>
+          </div>
+        </header>
+        <main id="main" class="page-main">
+          <header class="page-head">
+            <p class="page-eyebrow">Inquiry</p>
+            <h1>咨询</h1>
+            <p class="section-lead">请填写标题、联系方式与内容，我们将在确认后与您联系。私密帖需使用您设置的密码查看。</p>
+          </header>
+          <div
+            class="inquiry-board"
+            data-inquiry-board
+            data-msg-loading="加载中…"
+            data-msg-empty="暂无咨询。"
+            data-msg-submit-ok="咨询已提交。"
+            data-msg-submit-fail="提交失败，请稍后重试。"
+            data-msg-required="请填写全部必填项。"
+            data-msg-secret-password="私密帖需设置密码（4~32位）。"
+            data-msg-unlock-fail="密码不正确。"
+            data-msg-delete-ok="已删除。"
+            data-msg-delete-fail="删除失败，请确认管理员密码。"
+            data-msg-admin-password="管理员密码"
+            data-msg-secret-badge="私密"
+            data-msg-locked="此为私密帖，请输入密码查看。"
+            data-msg-unlock-btn="查看"
+            data-msg-delete-btn="删除"
+            data-msg-contact-label="联系方式"
+            data-msg-spam-rate="提交过于频繁，请1小时后再试。"
+            data-msg-spam-timing="请稍后再试。"
+            data-msg-turnstile-fail="安全验证失败，请刷新页面后重试。"
+          >
+            <div class="card inquiry-form-card">
+              <h2 class="form-title">提交咨询</h2>
+              <form class="contact-form" data-inquiry-form>
+                <label class="visually-hidden" aria-hidden="true">网站<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+                <label class="visually-hidden" aria-hidden="true">公司<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
+                <label>姓名<input type="text" name="name" required maxlength="40" placeholder="姓名" /></label>
+                <label>标题<input type="text" name="title" required maxlength="100" placeholder="咨询标题" /></label>
+                <label>联系方式（电话或邮箱）<input type="text" name="contact" required maxlength="80" placeholder="电话或邮箱" /></label>
+                <label>内容<textarea name="content" required maxlength="300" placeholder="咨询内容（300字以内）"></textarea></label>
+                <p class="inquiry-counter" data-content-counter>0/300</p>
+                <div class="inquiry-secret-row">
+                  <label><input type="checkbox" name="is_secret" value="1" /> 私密帖</label>
+                  <label data-password-wrap hidden>密码<input type="password" name="password" minlength="4" maxlength="32" autocomplete="new-password" placeholder="4~32位" /></label>
+                </div>
+                <div data-turnstile-mount class="turnstile-mount"></div>
+                <div class="form-actions"><button class="btn" type="submit">提交</button></div>
+                <p class="inquiry-status" data-inquiry-status></p>
+              </form>
+            </div>
+            <section aria-label="咨询列表">
+              <h2 class="form-title">咨询列表</h2>
+              <div class="inquiry-list" data-inquiry-list></div>
+            </section>
+          </div>
+        </main>
+        <footer class="site-footer">
+          <span>© 杰迪医疗有限公司 (JDmedical Co., Ltd.)</span>
+          <nav aria-label="页脚"><a href="privacy">隐私政策</a></nav>
+        </footer>
+      </div>
+    </div>
+    <div class="inquiry-modal" data-inquiry-modal hidden>
+      <div class="card inquiry-modal-card" role="dialog" aria-modal="true" aria-labelledby="inquiry-modal-title">
+        <h2 class="form-title" id="inquiry-modal-title" data-inquiry-modal-title>私密帖</h2>
+        <form data-inquiry-unlock-form>
+          <label>密码<input type="password" name="password" required autocomplete="current-password" /></label>
+          <div class="inquiry-modal-actions">
+            <button class="btn btn-ghost" type="button" data-inquiry-modal-close>取消</button>
+            <button class="btn" type="submit">确认</button>
+          </div>
+          <p class="inquiry-status" data-inquiry-modal-status></p>
+        </form>
+      </div>
+    </div>
+    <script src="../inquiry.js"></script>
+  </body>
+</html>

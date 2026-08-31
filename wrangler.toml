@@ -1,0 +1,11 @@
+name = "jdmedical-site"
+compatibility_date = "2024-09-01"
+pages_build_output_dir = "site"
+
+# D1: Cloudflare 대시보드에서 생성 후 database_id를 site/wrangler.toml에도 동일하게 반영하세요.
+# docs/inquiry-setup.md 참고
+
+[[d1_databases]]
+binding = "DB"
+database_name = "jdmedical-inquiries"
+database_id = "3b224df5-1c5d-4858-a5b3-5b881bdf4468"

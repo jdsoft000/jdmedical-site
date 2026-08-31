@@ -49,6 +49,7 @@
               <a href="business">业务</a>
               <a href="products">产品</a>
               <a href="partner">合作</a>
+              <a href="inquiry">咨询</a>
               <a href="contact" aria-current="page">联系</a>
             </nav>
             <nav class="lang-switch" aria-label="Language">
@@ -59,9 +60,8 @@
           </div>
         </header>
         <main id="main" class="page-main">
-          <header class="page-head"><p class="page-eyebrow">Contact</p><h1>联系方式</h1><p class="section-lead">请通过邮件留下咨询，我们确认后会回复。</p></header>
-          <div class="contact-layout">
-            <div class="card"><dl class="meta-grid">
+          <header class="page-head"><p class="page-eyebrow">Contact</p><h1>联系方式</h1><p class="section-lead">总部联系方式与来访路线。产品·报价咨询请使用<a href="inquiry">咨询</a>留言板。</p></header>
+          <div class="card contact-single"><dl class="meta-grid">
               <dt>公司名称</dt><dd>杰迪医疗有限公司 (JDmedical Co., Ltd.)</dd>
               <dt>事业者登录号</dt><dd>264-87-03918</dd>
               <dt>代表理事</dt><dd>闵正大</dd>
@@ -70,19 +70,37 @@
               <dt>邮箱</dt><dd><a href="mailto:jdmedical.co.ltd@gmail.com">jdmedical.co.ltd@gmail.com</a></dd>
               <dt>电话</dt><dd>整备中 — 请通过邮件咨询。</dd>
             </dl></div>
-            <div class="card">
-              <h2 class="form-title">邮件咨询</h2>
-              <form class="contact-form" data-contact-form data-mail-to="jdmedical.co.ltd@gmail.com" data-msg-required="请填写全部项目。" data-msg-from="发件人" data-msg-body="咨询内容" data-msg-open="将打开邮件应用，请完成发送。">
-                <label>标题<input type="text" name="subject" required maxlength="120" placeholder="咨询标题" /></label>
-                <label>邮箱地址<input type="email" name="email" required maxlength="120" placeholder="you@example.com" /></label>
-                <label>内容<textarea name="message" required maxlength="4000" placeholder="请填写咨询内容。"></textarea></label>
-                <div class="form-actions">
-                  <button class="btn" type="submit">发送邮件</button>
-                  <p class="form-hint" data-form-status>将打开默认邮件应用。</p>
-                </div>
-              </form>
+
+          <section class="map-section" aria-labelledby="directions-heading">
+            <h2 id="directions-heading" class="form-title">来访路线</h2>
+            <p class="map-address">大田广域市西区东西大路1005街59-13（内洞）</p>
+            <p class="map-links">
+              <a
+                href="https://map.kakao.com/link/search/대전광역시 서구 동서대로 1005번길 59-13"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Kakao地图</a>
+              <a
+                href="https://map.naver.com/v5/search/대전광역시 서구 동서대로 1005번길 59-13"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Naver地图</a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C+%EC%84%9C%EA%B5%AC+%EB%8F%99%EC%84%9C%EB%8C%80%EB%A1%9C+1005%EB%B2%88%EA%B8%B8+59-13"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Google地图</a>
+            </p>
+            <div class="map-frame">
+              <iframe
+                title="杰迪医疗总公司位置"
+                src="https://www.google.com/maps?q=%EB%8C%80%EC%A0%84%EA%B4%91%EC%97%AD%EC%8B%9C+%EC%84%9C%EA%B5%AC+%EB%8F%99%EC%84%9C%EB%8C%80%EB%A1%9C+1005%EB%B2%88%EA%B8%B8+59-13&amp;hl=zh-CN&amp;z=17&amp;output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
             </div>
-          </div>
+          </section>
         </main>
         <footer class="site-footer">
           <span>© 杰迪医疗有限公司 (JDmedical Co., Ltd.)</span>
@@ -92,6 +110,5 @@
         </footer>
       </div>
     </div>
-    <script src="../contact.js"></script>
   </body>
 </html>
