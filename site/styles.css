@@ -366,6 +366,10 @@ nav.nav a[aria-current="page"] {
   margin: 0;
 }
 
+.catalog-below {
+  margin-top: 1.75rem;
+}
+
 .section-lead {
   margin: -0.25rem 0 1.25rem;
   color: var(--muted);
