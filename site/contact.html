@@ -34,14 +34,21 @@
               <span>JDmedical Co., Ltd.</span>
             </div>
           </a>
-          <nav class="nav" aria-label="주요 메뉴">
-            <a href="./">홈</a>
-            <a href="about">회사</a>
-            <a href="business">사업</a>
-            <a href="products">제품</a>
-            <a href="partner">협력</a>
-            <a href="contact" aria-current="page">연락</a>
-          </nav>
+          <div class="header-tools">
+            <nav class="nav" aria-label="주요 메뉴">
+              <a href="./">홈</a>
+              <a href="about">회사</a>
+              <a href="business">사업</a>
+              <a href="products">제품</a>
+              <a href="partner">협력</a>
+              <a href="contact" aria-current="page">연락</a>
+            </nav>
+            <nav class="lang-switch" aria-label="Language">
+              <a href="contact" hreflang="ko" lang="ko" aria-current="page">KO</a>
+              <a href="en/contact" hreflang="en" lang="en">EN</a>
+              <a href="cn/contact" hreflang="zh-CN" lang="zh-CN">CN</a>
+            </nav>
+          </div>
         </header>
 
         <main id="main" class="page-main">
@@ -51,21 +58,55 @@
             <p class="section-lead">문의는 이메일로 남겨 주시면 확인 후 회신드립니다.</p>
           </header>
 
-          <div class="card">
-            <dl class="meta-grid">
-              <dt>상호</dt>
-              <dd>주식회사 제이디메디컬 (JDmedical Co., Ltd.)</dd>
-              <dt>대표이사</dt>
-              <dd>민정대</dd>
-              <dt>본사</dt>
-              <dd>대전광역시 서구 동서대로 1005번길 59-13 (내동)</dd>
-              <dt>웹사이트</dt>
-              <dd><a href="https://jdmedical.co.kr">https://jdmedical.co.kr</a></dd>
-              <dt>이메일</dt>
-              <dd><a href="mailto:jdmedical.co.ltd@gmail.com">jdmedical.co.ltd@gmail.com</a></dd>
-              <dt>전화</dt>
-              <dd>정비 중 — 이메일로 문의 부탁드립니다.</dd>
-            </dl>
+          <div class="contact-layout">
+            <div class="card">
+              <dl class="meta-grid">
+                <dt>상호</dt>
+                <dd>주식회사 제이디메디컬 (JDmedical Co., Ltd.)</dd>
+                <dt>대표이사</dt>
+                <dd>민정대</dd>
+                <dt>본사</dt>
+                <dd>대전광역시 서구 동서대로 1005번길 59-13 (내동)</dd>
+                <dt>웹사이트</dt>
+                <dd><a href="https://jdmedical.co.kr">https://jdmedical.co.kr</a></dd>
+                <dt>이메일</dt>
+                <dd><a href="mailto:jdmedical.co.ltd@gmail.com">jdmedical.co.ltd@gmail.com</a></dd>
+                <dt>전화</dt>
+                <dd>정비 중 — 이메일로 문의 부탁드립니다.</dd>
+              </dl>
+            </div>
+
+            <div class="card">
+              <h2 class="form-title">메일 문의</h2>
+              <form
+                class="contact-form"
+                data-contact-form
+                data-mail-to="jdmedical.co.ltd@gmail.com"
+                data-msg-required="모든 항목을 입력해 주세요."
+                data-msg-from="보낸 사람"
+                data-msg-body="문의 내용"
+                data-msg-open="메일 앱이 열립니다. 전송을 완료해 주세요."
+              >
+                <label>
+                  제목
+                  <input type="text" name="subject" required maxlength="120" placeholder="문의 제목" />
+                </label>
+                <label>
+                  메일주소
+                  <input type="email" name="email" required maxlength="120" placeholder="you@example.com" />
+                </label>
+                <label>
+                  내용
+                  <textarea name="message" required maxlength="4000" placeholder="문의 내용을 적어 주세요."></textarea>
+                </label>
+                <div class="form-actions">
+                  <button class="btn" type="submit">메일 보내기</button>
+                  <p class="form-hint" data-form-status>
+                    전송 시 기본 메일 앱이 열립니다.
+                  </p>
+                </div>
+              </form>
+            </div>
           </div>
         </main>
 
@@ -77,5 +118,6 @@
         </footer>
       </div>
     </div>
+    <script src="contact.js"></script>
   </body>
 </html>
