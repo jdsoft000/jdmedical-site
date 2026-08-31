@@ -329,7 +329,7 @@ nav.nav a[aria-current="page"] {
 }
 
 .catalog-below {
-  margin-top: 2.75rem;
+  margin-top: 3.5rem;
   padding-top: 2.75rem;
   border-top: 1px solid var(--border);
 }
@@ -371,12 +371,6 @@ nav.nav a[aria-current="page"] {
 
 .product-copy .clean {
   margin: 0;
-}
-
-.catalog-below {
-  margin-top: 4.5rem;
-  padding-top: 2.5rem;
-  border-top: 1px solid var(--border);
 }
 
 .section-lead {
