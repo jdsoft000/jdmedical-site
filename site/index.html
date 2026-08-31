@@ -13,151 +13,78 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
     />
+    <link rel="icon" href="images/jd-medical-symbol.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
-    <!--
-      제품 사진: 비전과학에서 허락받은 원본을 그대로 저장하세요.
-      파일명 고정 → 디자인(주변 프레임·조명·받침)은 CSS로 적용됩니다.
-        images/centrifuge.jpg   (또는 .png)
-        images/incubator.jpg
-    -->
   </head>
   <body>
     <a class="skip" href="#main">본문으로 건너뛰기</a>
     <div class="page-bg">
       <div class="wrap">
         <header class="site-header">
-          <div class="brand">
-            <div class="brand-mark" aria-hidden="true">JD</div>
+          <a class="brand" href="index.html" aria-label="제이디메디컬 홈">
+            <img
+              class="brand-logo"
+              src="images/jd-medical-symbol.svg"
+              width="48"
+              height="32"
+              alt=""
+            />
             <div class="brand-text">
               <strong>제이디메디컬</strong>
               <span>JDmedical Co., Ltd.</span>
             </div>
-          </div>
+          </a>
           <nav class="nav" aria-label="주요 메뉴">
-            <a href="#about">회사</a>
-            <a href="#business">사업</a>
-            <a href="#partner">협력</a>
-            <a href="#contact">연락</a>
+            <a href="index.html" aria-current="page">홈</a>
+            <a href="about.html">회사</a>
+            <a href="business.html">사업</a>
+            <a href="products.html">제품</a>
+            <a href="partner.html">협력</a>
+            <a href="contact.html">연락</a>
           </nav>
         </header>
 
         <main id="main">
           <section class="hero" aria-labelledby="hero-title">
-            <h1 id="hero-title">주식회사 제이디메디컬</h1>
-            <p class="en">JDmedical Co., Ltd.</p>
+            <img
+              class="hero-logo"
+              src="images/jd-medical-logo-onDark.svg"
+              width="280"
+              height="228"
+              alt="JD MEDICAL 제이디메디컬"
+            />
+            <h1 id="hero-title" class="visually-hidden">주식회사 제이디메디컬</h1>
             <p class="hero-lead">
               실험·연구 환경을 위한 장비 제조와 협력 생산을 바탕으로, 품질과 일정을 지키는
               파트너십을 지향합니다.
             </p>
+            <figure class="hero-banner">
+              <img
+                src="images/sign/1100x400.jpg"
+                width="1600"
+                height="582"
+                alt="Technological Innovation · Trust Management · Peak Performance — JD MEDICAL CO., LTD."
+              />
+            </figure>
           </section>
 
-          <section class="showcase-grid" aria-label="대표 제품 이미지">
-            <article class="product-stage">
-              <div class="product-inner">
-                <div class="product-label">
-                  <h2>원심분리기</h2>
-                  <span class="tag">Lab · Centrifuge</span>
-                </div>
-                <div class="product-canvas">
-                  <figure>
-                    <!-- 비전과학 제공·허용 이미지로 교체 (기계 본체 원본 유지) -->
-                    <img
-                      src="images/centrifuge.png"
-                      width="680"
-                      height="680"
-                      alt="원심분리기 제품 이미지"
-                    />
-                    <span class="pedestal" aria-hidden="true"></span>
-                    <span class="rim" aria-hidden="true"></span>
-                  </figure>
-                </div>
-                <p class="caption">VS-550 다목적 냉장 원심분리기</p>
-              </div>
-            </article>
-
-            <article class="product-stage">
-              <div class="product-inner">
-                <div class="product-label">
-                  <h2>배양기</h2>
-                  <span class="tag">Lab · Incubator</span>
-                </div>
-                <div class="product-canvas">
-                  <figure>
-                    <img
-                      src="images/incubator.jpg"
-                      width="680"
-                      height="680"
-                      alt="배양기 제품 이미지"
-                    />
-                    <span class="pedestal" aria-hidden="true"></span>
-                    <span class="rim" aria-hidden="true"></span>
-                  </figure>
-                </div>
-                <p class="caption">VS-3125Bi / VS-3150Bi 소형 저온배양기</p>
-              </div>
-            </article>
-          </section>
-
-          <section id="about" class="block" aria-labelledby="about-title">
-            <h2 id="about-title">회사 소개</h2>
-            <div class="card">
-              <p>
-                주식회사 제이디메디컬은 실험실·연구 기관·산업 현장에서 요구되는 장비를 중심으로
-                제조와 협력 생산을 수행하는 법인입니다. 공정 관리와 납기 준수를 기본으로,
-                협력사와의 긴밀한 커뮤니케이션을 통해 안정적인 공급을 이어가고 있습니다.
-              </p>
-              <p>
-                당사는 <strong style="color: var(--text)">비전과학 협력파트너</strong>로 협력 관계를
-                유지하고 있으며, 제품 사양·기술 상세는 비전과학 공식 채널을 참고해 주시기 바랍니다.
-              </p>
-            </div>
-          </section>
-
-          <section id="business" class="block" aria-labelledby="business-title">
-            <h2 id="business-title">사업 영역</h2>
-            <div class="card">
-              <ul class="clean">
-                <li>실험·연구용 장비 관련 <strong style="color: var(--text)">제조 및 협력 생산</strong></li>
-                <li>품질·일정 관리에 따른 <strong style="color: var(--text)">납품 지원</strong></li>
-                <li>협력사 요구에 맞춘 <strong style="color: var(--text)">주문 제작·개발 협력</strong> (범위는 별도 협의)</li>
-              </ul>
-            </div>
-          </section>
-
-          <section id="partner" class="block" aria-labelledby="partner-title">
-            <h2 id="partner-title">비전과학 협력</h2>
-            <div class="partner-banner">
-              <p style="margin: 0; flex: 1; min-width: 200px; color: var(--muted)">
-                당사는 <strong style="color: var(--text)">비전과학 협력사</strong>입니다. 카탈로그·기술
-                문의는 비전과학 공식 사이트를 이용해 주세요.
-              </p>
-              <a
-                class="btn"
-                href="https://www.visionsci.co.kr/main.php"
-                target="_blank"
-                rel="noopener noreferrer"
-                >비전과학 공식 사이트</a>
-            </div>
-          </section>
-
-          <section id="contact" class="block" aria-labelledby="contact-title">
-            <h2 id="contact-title">연락처</h2>
-            <div class="card">
-              <dl class="meta-grid">
-                <dt>상호</dt>
-                <dd>주식회사 제이디메디컬 (JDmedical Co., Ltd.)</dd>
-                <dt>대표이사</dt>
-                <dd>민정대</dd>
-                <dt>본사</dt>
-                <dd>대전광역시 서구 동서대로 1005번길 59-13 (내동)</dd>
-                <dt>웹사이트</dt>
-                <dd><a href="https://jdmedical.co.kr">https://jdmedical.co.kr</a></dd>
-                <dt>이메일</dt>
-                <dd><a href="mailto:jdmedical.co.ltd@gmail.com">jdmedical.co.ltd@gmail.com</a></dd>
-                <dt>전화</dt>
-                <dd>정비 중 — 이메일로 문의 부탁드립니다.</dd>
-              </dl>
-            </div>
+          <section class="home-links" aria-label="주요 바로가기">
+            <a class="home-link" href="about.html">
+              <span class="home-link-label">회사</span>
+              <span class="home-link-desc">법인 소개와 비전과학 협력</span>
+            </a>
+            <a class="home-link" href="business.html">
+              <span class="home-link-label">사업</span>
+              <span class="home-link-desc">제조·납품·산업 분야</span>
+            </a>
+            <a class="home-link" href="products.html">
+              <span class="home-link-label">제품</span>
+              <span class="home-link-desc">원심분리기 · 배양기</span>
+            </a>
+            <a class="home-link" href="contact.html">
+              <span class="home-link-label">연락</span>
+              <span class="home-link-desc">본사 · 이메일 문의</span>
+            </a>
           </section>
         </main>
 

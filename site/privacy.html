@@ -9,24 +9,42 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
     />
+    <link rel="icon" href="images/jd-medical-symbol.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip" href="#main">본문으로 건너뛰기</a>
     <div class="page-bg">
       <div class="wrap">
         <header class="site-header">
-          <div class="brand">
-            <div class="brand-mark" aria-hidden="true">JD</div>
+          <a class="brand" href="index.html" aria-label="제이디메디컬 홈">
+            <img
+              class="brand-logo"
+              src="images/jd-medical-symbol.svg"
+              width="48"
+              height="32"
+              alt=""
+            />
             <div class="brand-text">
               <strong>제이디메디컬</strong>
               <span>개인정보처리방침</span>
             </div>
-          </div>
-          <nav class="nav"><a href="index.html">홈으로</a></nav>
+          </a>
+          <nav class="nav" aria-label="주요 메뉴">
+            <a href="index.html">홈</a>
+            <a href="about.html">회사</a>
+            <a href="business.html">사업</a>
+            <a href="products.html">제품</a>
+            <a href="partner.html">협력</a>
+            <a href="contact.html">연락</a>
+          </nav>
         </header>
 
-        <main id="main" class="block" style="margin-top: 2rem">
-          <h1 style="font-size: 1.5rem; margin-bottom: 1rem">개인정보처리방침</h1>
+        <main id="main" class="page-main">
+          <header class="page-head">
+            <p class="page-eyebrow">Privacy</p>
+            <h1>개인정보처리방침</h1>
+          </header>
           <div class="card">
             <p>
               주식회사 제이디메디컬(이하 “회사”)은 정보주체의 개인정보를 중요시하며, 「개인정보
@@ -72,7 +90,9 @@
 
         <footer class="site-footer">
           <span>© 주식회사 제이디메디컬</span>
-          <nav><a href="index.html">홈</a></nav>
+          <nav aria-label="푸터">
+            <a href="index.html">홈</a>
+          </nav>
         </footer>
       </div>
     </div>
