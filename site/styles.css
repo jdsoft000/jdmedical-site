@@ -325,6 +325,13 @@ nav.nav a[aria-current="page"] {
   grid-template-columns: 1fr;
   gap: 1.5rem;
   align-items: start;
+  padding-bottom: 2.75rem;
+}
+
+.catalog-below {
+  margin-top: 2.75rem;
+  padding-top: 2.75rem;
+  border-top: 1px solid var(--border);
 }
 
 @media (min-width: 900px) {
@@ -367,8 +374,8 @@ nav.nav a[aria-current="page"] {
 }
 
 .catalog-below {
-  margin-top: 3.25rem;
-  padding-top: 2rem;
+  margin-top: 4.5rem;
+  padding-top: 2.5rem;
   border-top: 1px solid var(--border);
 }
 
